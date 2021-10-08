@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentTypeImage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE( CASE( Payment_Type__c ,
+&quot;Visa&quot;,&quot;/resource/master_icon&quot;, 
+&quot;MasterCard&quot;, &quot;/resource/visa_icon&quot;,
+&quot;/img/samples/flag_red.gif&quot;) 
+,&quot;card type&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PaymentTypeImage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
